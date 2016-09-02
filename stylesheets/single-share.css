@@ -1,0 +1,8 @@
+.share-sprite, .test .share-qq {
+  background-image: url('../images/share-s7fefca4b98.png');
+  background-repeat: no-repeat;
+}
+
+.test .share-qq {
+  background-position: 0 -23px;
+}

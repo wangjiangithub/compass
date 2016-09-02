@@ -1,0 +1,76 @@
+@import "compass/reset";
+@import "compass/css3";
+// @import "compass/layout";
+@import "compass/typography";
+
+
+$highlight-color:#abcdef;
+
+body{
+  font-size: 62.5%;
+  padding-left:100px;
+  // background:green;
+}
+
+@mixin link-colors($normal, $hover: false, $active: false, $visited: false, $focus: false) {
+  color: $normal;
+  @if $visited {
+    &:visited {
+      color: $visited;
+    }
+  }
+  @if $focus {
+    &:focus {
+      color: $focus;
+    }
+  }
+  @if $hover {
+    &:hover {
+      color: $hover;
+    }
+  }
+  @if $active {
+    &:active {
+      color: $active;
+    }
+  }
+}
+
+
+.header{
+    // background:red;    
+    ul{
+        list-style: none;
+        li{
+            padding: 10px 30px; 
+            background: yellow;
+            @include inline-block;
+            @include opacity(0.9);
+        }
+        .list1{
+            list-style: none;
+            background: green;
+            border:1px solid #eee;
+            @include border-radius(10px);
+            @include box-shadow(7px 8px 10px blue);
+            // font-size: 1rem;
+        }
+    }   
+}
+.main{
+  margin:20px 0;
+  a{
+      font-size:  1rem;
+      @include link-colors(#00c,#0cc,#c0c,#ccc,#cc0);
+  }
+} 
+#footer {
+    background: $highlight-color;
+    // @include sticky-footer(54px);
+}
+
+
+.icon{
+  width: 24px;
+  height: 24px;
+}

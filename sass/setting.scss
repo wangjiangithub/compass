@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+
+// 配置间距
+$setting-spacing: 5px;
+$setting-compass-spacing: 50px;
+$setting-github-spacing: 50px;
+$setting-qq-spacing: 50px;
+$setting-weibo-spacing: 50px;
+
+// 配置位置
+$setting-position: 5px;
+$setting-compass-position: 50px;
+$setting-github-position: 50px;
+$setting-qq-position: 50px;
+$setting-weibo-position: 50px;
+
+// 配置sprite的布局方式
+$setting-layout: vertical;  // vertical/horizontal/diagonal/smart
+
+// 自动输出尺寸
+$setting-sprite-dimensions: true;
+
+@import "compass/utilities/sprites";
+@import "setting/*.png";
+@include all-setting-sprites;
